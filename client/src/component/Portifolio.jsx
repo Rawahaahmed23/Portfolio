@@ -4,21 +4,14 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react"; // import icons
 
 const projects = [
+
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with React and Node.js",
-    image: "/placeholder.svg?height=300&width=400&text=E-commerce+Platform",
-    tech: ["React", "Node.js", "MongoDB"],
-    url: "https://ecommerce-demo.example.com",
-    github: "https://github.com/username/ecommerce-platform",
-  },
-  {
-    title: "Task Management App",
-    description: "A collaborative task management application",
-    image: "/placeholder.svg?height=300&width=400&text=Task+Management+App",
-    tech: ["React", "TypeScript", "PostgreSQL"],
-    url: "https://taskapp-demo.example.com",
-    github: "https://github.com/username/task-management-app",
+    title: "Attendance Management System",
+    description: "A web application for managing attendance records",
+    image: "/attandance.png",
+    tech: ["React", "javascript", "MongoDB", "Node.js"],
+    url: "https://mern-projects-vqgp.vercel.app/",
+    github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/attendenceapp",
   },
   {
     title: "Weather Dashboard",

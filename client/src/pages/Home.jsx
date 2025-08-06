@@ -5,6 +5,7 @@ import Skills from "../component/skills"
 import Portifolio from '../component/Portifolio'
 
 import Footer from "../component/Footer"
+import { Link } from "react-router-dom";
 import Contact from "../component/Contact"
 
 
@@ -87,7 +88,7 @@ const imageVariants = {
                 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[43px] mt-2 leading-normal"
                 variants={itemVariants}
               >
-                Full stack developer
+                Mern stack developer
               </motion.h1>
             </motion.div>
 
@@ -106,9 +107,11 @@ const imageVariants = {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <button className="bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-6 py-3 sm:px-8 sm:py-4 lg:p-5 text-white font-bold text-lg sm:text-xl lg:text-2xl rounded-xl">
-                Download CV
-              </button>
+  <Link to="/Resume.pdf" target="_blank" download>
+  <button className="bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-6 py-3 sm:px-8 sm:py-4 lg:p-5 text-white font-bold text-lg sm:text-xl lg:text-2xl rounded-xl">
+    Download CV
+  </button>
+</Link>
             </motion.div>
           </motion.div>
         </div>

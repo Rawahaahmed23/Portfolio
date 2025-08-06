@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [contact, setContact] = useState({
@@ -10,28 +11,34 @@ function Contact() {
   });
 
   const handle = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+    const { name, value } = e.target;
     setContact({ ...contact, [name]: value });
   };
 
-  const handelSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    const templateParams = {
+      username: contact.username,
+      email: contact.email,
+      message: contact.message
+    };
+
     try {
-      const response = await fetch("http://localhost:5000/api/form/contact", {
-        method: 'POST',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(contact)
-      });
-      if (response.ok) {
-        setContact({ username: "", email: "", message: "" });
-      }
+      const result = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      console.log("Email sent successfully:", result.text);
+      alert("Message sent!");
+      setContact({ username: "", email: "", message: "" });
     } catch (error) {
-      console.log(error);
+      console.error("Error sending email:", error);
+      alert("Failed to send message. Please try again.");
     }
   };
 
-  // Refs for scroll trigger
   const headerRef = useRef(null);
   const formRef = useRef(null);
   const isHeaderInView = useInView(headerRef, { once: true });
@@ -75,13 +82,14 @@ function Contact() {
 
             {/* Form Section */}
             <div className="w-full md:w-1/2 p-10 mt-10">
-              <div className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <input
                   type="text"
                   placeholder="Your Name"
                   name="username"
                   value={contact.username}
                   onChange={handle}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-5"
                 />
                 <input
@@ -90,6 +98,7 @@ function Contact() {
                   value={contact.email}
                   onChange={handle}
                   placeholder="Your Email"
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-5"
                 />
                 <textarea
@@ -98,6 +107,7 @@ function Contact() {
                   name="message"
                   value={contact.message}
                   onChange={handle}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-5"
                 ></textarea>
 
@@ -123,13 +133,12 @@ function Contact() {
                 </div>
 
                 <button
-                  type="button"
-                  onClick={handelSubmit}
+                  type="submit"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md mt-5"
                 >
                   Send Message
                 </button>
-              </div>
+              </form>
             </div>
           </motion.div>
         </div>

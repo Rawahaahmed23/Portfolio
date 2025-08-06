@@ -12,7 +12,7 @@ const services = [
 
   {
     icon: Globe,
-    title: "Full Stack Development",
+    title: "Mern Stack Development",
     description: "End-to-end development from frontend to backend and database design.",
   },
   {
