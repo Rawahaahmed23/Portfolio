@@ -20,8 +20,8 @@ function Contact() {
 
 const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
+const publicKey = process.env.REACT_APP_EMAILJS_USER_ID;
+  
     const templateParams = {
       username: contact.username,
       email: contact.email,
