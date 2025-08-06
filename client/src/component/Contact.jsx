@@ -69,7 +69,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_USER_ID;
             initial={{ opacity: 0, y: 100 }}
             animate={isFormInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1 }}
-            className="flex flex-row w-[80%] h-[43rem] bg-white rounded-lg shadow-lg"
+            className="flex flex-row w-full lg:w-[80%] h-[43rem] bg-white rounded-lg shadow-lg"
           >
             {/* Image Section */}
             <div className="hidden md:block w-1/2 pr-6">
