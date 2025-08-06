@@ -18,9 +18,9 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const serviceID = REACT_APP_EMAILJS_SERVICE_ID;
+const templateID =REACT_APP_EMAILJS_TEMPLATE_ID;
+const publicKey = REACT_APP_EMAILJS_PUBLIC_KEY;
 
     const templateParams = {
       username: contact.username,
