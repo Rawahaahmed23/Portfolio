@@ -10,7 +10,7 @@ const projects = [
     description: "A web application for managing attendance records",
     image: "/attandance.png",
     tech: ["React", "javascript", "MongoDB", "Node.js"],
-    url: "https://mern-projects-vqgp.vercel.app/",
+    url: "attendenceapp-ten.vercel.app",
     github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/attendenceapp",
   },
   {
