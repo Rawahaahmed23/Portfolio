@@ -9,6 +9,8 @@ function Skills() {
     { src: "/express.png", alt: "Express", name: "Express" },
     { src: "/mongodb.png", alt: "MongoDB", name: "MongoDB" },
     { src: "/java.png", alt: "JavaScript", name: "JavaScript" },
+    { src: "/type.svg", alt: "TypeScript", name: "TypeScript" },
+    { src: "/Github.png", alt: "Github", name: "Github" },
     { src: "/next-js.svg", alt: "Next.js", name: "Next" }
   ];
 
