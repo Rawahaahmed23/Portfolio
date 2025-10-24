@@ -20,7 +20,23 @@ const projects = [
     tech: ["React.js", "Javascript", "API Integration"],
     url: "https://mern-projects-xvgc.vercel.app/",
     github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/weather",
-  },
+  },  
+  {
+    title: "Todo List",
+    description: "A simple and interactive Todo List app built with React, allowing users to add, edit, and delete tasks. Uses localStorage to store data persistently even after page reloads.",
+    image: "/Todo.png",
+    tech: ["React.js", "JavaScript", "localStorage"],
+    url: "https://todo-list-steel-two-45.vercel.app/",
+    github: "https://github.com/Rawahaahmed23/TodoList",
+  },  
+ {
+  title: "Currency Converter",
+  description: "A simple and responsive Currency Converter app built with React that allows users to convert between multiple currencies in real time. It fetches up-to-date exchange rates from an API and provides a clean, user-friendly interface for quick and accurate conversions.",
+  image: "/Currency.png",
+  tech: ["React.js", "JavaScript", "API"],
+  url: "https://currency-project-peach.vercel.app/",
+  github: "https://github.com/Rawahaahmed23/Currency-project",
+},
 ];
 
 const containerVariants = {
