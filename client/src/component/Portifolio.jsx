@@ -6,14 +6,6 @@ import { Github, ExternalLink } from "lucide-react"; // import icons
 const projects = [
 
   {
-    title: "Attendance Management System",
-    description: "A web application for managing attendance records",
-    image: "/attandance.png",
-    tech: ["React", "javascript", "MongoDB", "Node.js"],
-    url: "https://attendenceapp-ten.vercel.app/",
-    github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/attendenceapp",
-  },
-  {
     title: "Weather Dashboard",
     description: "Real-time weather monitoring dashboard",
     image: "/weather.png",
@@ -29,14 +21,22 @@ const projects = [
     url: "https://todo-list-steel-two-45.vercel.app/",
     github: "https://github.com/Rawahaahmed23/TodoList",
   },  
- {
-  title: "Currency Converter",
-  description: "A simple and responsive Currency Converter app built with React that allows users to convert between multiple currencies in real time. It fetches up-to-date exchange rates from an API and provides a clean, user-friendly interface for quick and accurate conversions.",
-  image: "/Currency.png",
-  tech: ["React.js", "JavaScript", "API"],
-  url: "https://currency-project-peach.vercel.app/",
-  github: "https://github.com/Rawahaahmed23/Currency-project",
-},
+  {
+    title: "Currency Converter",
+    description: "A simple and responsive Currency Converter app built with React that allows users to convert between multiple currencies in real time. It fetches up-to-date exchange rates from an API and provides a clean, user-friendly interface for quick and accurate conversions.",
+    image: "/Currency.png",
+    tech: ["React.js", "JavaScript", "API"],
+    url: "https://currency-project-peach.vercel.app/",
+    github: "https://github.com/Rawahaahmed23/Currency-project",
+  },
+  {
+    title: "Attendance Management System",
+    description: "A web application for managing attendance records",
+    image: "/attandance.png",
+    tech: ["React", "javascript", "MongoDB", "Node.js"],
+    url: "https://attendenceapp-ten.vercel.app/",
+    github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/attendenceapp",
+  },
 ];
 
 const containerVariants = {
