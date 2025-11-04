@@ -107,7 +107,7 @@ const imageVariants = {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-  <Link to="/Resume.pdf" target="_blank" download>
+  <Link to="/Rawaha CV.pdf" target="_blank" download>
   <button className="bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-6 py-3 sm:px-8 sm:py-4 lg:p-5 text-white font-bold text-lg sm:text-xl lg:text-2xl rounded-xl">
     Download CV
   </button>
