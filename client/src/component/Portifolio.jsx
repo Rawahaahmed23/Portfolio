@@ -11,7 +11,7 @@ const projects = [
     image: "/weather.png",
     tech: ["React.js", "Javascript", "API Integration"],
     url: "https://mern-projects-xvgc.vercel.app/",
-    github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/weather",
+    github: "https://github.com/Rawahaahmed23/weather-update",
   },  
   {
     title: "Todo List",
@@ -35,7 +35,17 @@ const projects = [
     image: "/attandance.png",
     tech: ["React", "javascript", "MongoDB", "Node.js"],
     url: "https://attendenceapp-ten.vercel.app/",
-    github: "https://github.com/Rawahaahmed23/mern-projects/tree/main/attendenceapp",
+    github: "https://github.com/Rawahaahmed23/attandance-managment-system/tree/main",
+  },
+  {
+    title: "School Management System",
+    description:
+      "A full-stack MERN School Management System for managing students, fees, attendance, and admin operations. Includes student registration, fee tracking, and database management with a responsive dashboard.",
+    image: "/school.png",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS"],
+    url: "https://student-manangment-system-flame.vercel.app/",
+    github:
+      "https://github.com/Rawahaahmed23/Student-Manangment-System",
   },
 ];
 
